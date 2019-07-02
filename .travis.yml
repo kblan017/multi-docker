@@ -4,7 +4,7 @@ services:
 
 before_install:
   - docker build -t kblan017/react-test -f ./client/Dockerfile.dev ./client
-
+ 
 script:
   - docker run kblan017/react-test npm test -- --coverage 
 
